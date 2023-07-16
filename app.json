@@ -15,16 +15,40 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.keremkaradenzz.userregister"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.keremkaradenzz.userregister"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9f79a7b4-22d7-449f-89a1-eb7c027cdfe5"
+      }
     }
-  }
+  },
+  "plugins": [
+    [
+      "expo-image-picker",
+      {
+        "photosPermission": "The app accesses your photos to let you share them with your friends."
+      }
+    ],
+    [
+      "react-native-document-picker"
+    ],
+    [
+      "expo-document-picker",
+      {
+        "iCloudContainerEnvironment": "Production"
+      }
+    ]
+  ]
 }
